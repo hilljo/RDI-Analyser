@@ -2092,8 +2092,11 @@ callprogress:' read message to see where we are
                             Dim ELA = CInt("&H" & ELAH)
                             exoaddress = PLA & ":" & ELA & " (Hex-" & PLAH & ELAH & ")"
 
+
+
+                            'Alarm download complete for module
                             'was "A401A401A401A401"
-                            '102900                             'Alarm download complete for module
+                            '102900
                         Case strLine.Contains("102900")
                             'alarm recovery 
                             ModemIsAlarmRecovery = True'
